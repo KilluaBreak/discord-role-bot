@@ -3,7 +3,6 @@ from discord.ext import commands
 from discord import ui
 import os
 from dotenv import load_dotenv
-from keep_alive import keep_alive
 
 # Load token dan owner
 load_dotenv()
