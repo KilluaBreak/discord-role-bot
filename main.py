@@ -97,8 +97,6 @@ async def rolemenu(interaction: discord.Interaction):
 
     await interaction.response.send_message(embed=embed, view=RoleDropdownView())
 
-# Aktifkan server untuk UptimeRobot
-keep_alive()
 
 # Jalankan bot
 bot.run(TOKEN)
