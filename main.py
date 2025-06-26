@@ -125,7 +125,7 @@ async def rolemenu_cmd(interaction: discord.Interaction):
 
     embed = discord.Embed(
         title="Self-Assign Roles",
-        description="Klik dropdown di bawah untuk memilih role.\n• pick your role.\n\n# ras\n<@1382008246327312424>\n<@1382008643326574622>\n<@1382010013144322128>\n<@1385923115929833522>\n<@1385922167685775401>\n<@1385921921677266995>\n\n ping\n<@1383027202970484766>\n<@1383012056353210488>\n<@1383671901699702864>\n<@1383366844450082817>\n<@1387340859946569808>\n\n hobi\n<@1381930147833315398>\n<@1381930494316515411>\n<@1381931492518662214>\n<@1383003121416011866>\n<@1383003591614140477>\n<@1383003667178852494>\n<@1383003734552084531>\n<@1381931995373768744>\n<@1381932371787386920>\n<@1381932623353610240>",
+        description="# Klik dropdown di bawah untuk memilih role.\n• pick your role.\n\nRas`🔱ras dewa`\n`😈ras iblis`\n`🐉ras naga`\n`💨 ras elemental`\n`⛏️ ras dwarf`\n`🧑‍🦲 ras human`\n\nPing\n`🎉giveaway ping`\n`🤝partnership ping`\n`🔔partnership event`\n`🌸pencinta anime`\n`🔥pencinta donghua`\n`📖pencinta komik`\n`🎤vocaloid lovers`\n`🎨art lovers`\n`👀pengamat server`\n\nGames\n`💥 Free Fire`\n`🔪 Mobile Legends`\n`🚪 PUBG`\n`📦 Roblox`",
                         color=discord.Color.blurple()
     )
     await interaction.response.send_message(embed=embed, view=RoleMenuView())
