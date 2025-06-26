@@ -124,8 +124,8 @@ async def rolemenu_cmd(interaction: discord.Interaction):
         return
 
     embed = discord.Embed(
-        title="Self-Assign Roles",
-        description="# Klik dropdown di bawah untuk memilih role.\n• pick your role.\n\nRas`🔱ras dewa`\n`😈ras iblis`\n`🐉ras naga`\n`💨 ras elemental`\n`⛏️ ras dwarf`\n`🧑‍🦲 ras human`\n\nPing\n`🎉giveaway ping`\n`🤝partnership ping`\n`🔔partnership event`\n`🌸pencinta anime`\n`🔥pencinta donghua`\n`📖pencinta komik`\n`🎤vocaloid lovers`\n`🎨art lovers`\n`👀pengamat server`\n\nGames\n`💥 Free Fire`\n`🔪 Mobile Legends`\n`🚪 PUBG`\n`📦 Roblox`",
+        title="‌🇾‌‌🇺‌‌🇬‌‌🇪‌‌🇳‌‌🇽‌",
+        description="# Klik dropdown di bawah untuk memilih role.\n• pick your role.\n\nRas\n`🔱ras dewa`\n`😈ras iblis`\n`🐉ras naga`\n`💨 ras elemental`\n`⛏️ ras dwarf`\n`🧑‍🦲 ras human`\n\nPing\n`🎉giveaway ping`\n`🤝partnership ping`\n`🔔partnership event`\n`🌸pencinta anime`\n`🔥pencinta donghua`\n`📖pencinta komik`\n`🎤vocaloid lovers`\n`🎨art lovers`\n`👀pengamat server`\n\nGames\n`💥 Free Fire`\n`🔪 Mobile Legends`\n`🚪 PUBG`\n`📦 Roblox`",
                         color=discord.Color.blurple()
     )
     await interaction.response.send_message(embed=embed, view=RoleMenuView())
