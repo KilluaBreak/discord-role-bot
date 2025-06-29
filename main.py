@@ -113,12 +113,12 @@ class RoleMenuView(discord.ui.View):
                 ("🎨 pencinta gambar",  "gambar",   None),
             ]))
         self.add_item(GenericRoleDropdown(
-            "Choose Your Hobbies…",
+            "Choose Your games…",
             [
-                ("<:Free_fire_logo:1382334048092819497> free fire",       "free fire",     None),
+                ("🔫 free fire",       "free fire",     None),
                 ("🔥 pubg",            "PUBG",          None),
                 ("📖 mobile legend",   "mobile legend", None), 
-                ("📖 Valorant",        "Valorant",      None), 
+                ("💣 Valorant",        "Valorant",      None), 
                 ("🎧 minecraft",       "minecraft",     None),
                 ("🎨 roblox",          "roblox",        None),
             ]))
