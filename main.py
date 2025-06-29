@@ -113,16 +113,15 @@ class RoleMenuView(discord.ui.View):
                 ("🎨 pencinta gambar",  "gambar",   None),
             ]))
         self.add_item(GenericRoleDropdown(
-            "Choose Your Games…"
+            "Choose Your Hobbies…",
             [
-                ("<:Free_fire_logo:1382334048092819497> free fire",        "free fire",      None),
-                ("<:PUBG:1382332620955713537> PUBG",                       "PUBG",           None),
-                ("<:mlbb:1382552286965796944> mobile legend",              "mobile legend"   None),
-                ("valorant",         "valorant"        None),
-                ("minecraft",        "minecraft"       None),
-                ("<:Roblox:1382333545527382166> roblox",                   "roblox"          None),
+                ("<:Free_fire_logo:1382334048092819497> free fire",       "free fire",     None),
+                ("🔥 pubg",            "PUBG",          None),
+                ("📖 mobile legend",   "mobile legend", None), 
+                ("📖 Valorant",        "Valorant",      None), 
+                ("🎧 minecraft",       "minecraft",     None),
+                ("🎨 roblox",          "roblox",        None),
             ]))
-
 # ─────────────────────────────────────────────────────────────
 # 4. Slash command /rolemenu
 # ─────────────────────────────────────────────────────────────
