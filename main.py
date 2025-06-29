@@ -27,7 +27,7 @@ ROLE_GROUPS = {
     # dropdown “ping”
     "giveaway_ping":   [1383027202970484766],
     "partnership_ping":[1383012056353210488],
-    "partnership_evt": [1383671901699702864],
+    "partnership_event": [1383671901699702864],
     "promosi_ping":    [1383366844450082817],
     "misteri_ping":    [1387340859946569808],
 
@@ -35,15 +35,16 @@ ROLE_GROUPS = {
     "anime":           [1381930147833315398],
     "donghua":         [1381930494316515411],
     "komik":           [1381931492518662214],
-    "game": [                     # <─ Pencinta Game → 4-5 role sekaligus
-        1383003121416011866,
-        1383003591614140477,
-        1383003667178852494,
-        1383003734552084531,      # contoh: role “gamer” umum
-    ],
-    "musik":           [1381931995373768744],
-    "gambar":          [1381932371787386920],
-    "observer":        [1381932623353610240],
+    "vocaloid":        [1381931995373768744],
+    "art":             [1381932371787386920],
+
+    # dropdown "game"
+    "free fire":       [1383003121416011866],                    # <─ Pencinta Game → 4-5 role sekaligus
+    "PUBG":            [1383003667178852494],
+    "mobile legend":   [1383003591614140477],
+    "Valorant":        [1387784579431272558],
+    "minecraft":       [1387784434278990046],
+    "roblox":          [1383003734552084531],
 }
 
 # ─────────────────────────────────────────────────────────────
@@ -82,7 +83,7 @@ class RoleMenuView(discord.ui.View):
         super().__init__(timeout=None)
 
         self.add_item(GenericRoleDropdown(
-            "Pilih ras-mu…",
+            "Choose Your Race…",
             [
                 ("🔱 ras dewa",       "ras_dewa",       None),
                 ("😈 ras iblis",      "ras_iblis",      None),
@@ -93,7 +94,7 @@ class RoleMenuView(discord.ui.View):
             ]))
 
         self.add_item(GenericRoleDropdown(
-            "Pilih ping…",
+            "Choose Your Ping…",
             [
                 ("🎉 giveaway ping",       "giveaway_ping",    None),
                 ("🤝 partnership ping",    "partnership_ping", None),
@@ -103,16 +104,22 @@ class RoleMenuView(discord.ui.View):
             ]))
 
         self.add_item(GenericRoleDropdown(
-            "Pilih hobi…",
+            "Choose Your Hobbies…",
             [
                 ("🌸 pencinta anime",   "anime",    None),
                 ("🔥 pencinta donghua", "donghua",  None),
-                ("📖 pencinta komik",   "komik",    None),
-                ("🎮 pencinta game",    "game",     None),  # ← Banyak role
+                ("📖 pencinta komik",   "komik",    None), 
                 ("🎧 pencinta musik",   "musik",    None),
                 ("🎨 pencinta gambar",  "gambar",   None),
-                ("👀 pengamat server",  "observer", None),
             ]))
+        self.add_item(GenericRoleDropdown(
+            "Choose Your Games…"
+                ("<:Free_fire_logo:1382334048092819497> free fire",        "free fire",      None),
+                ("<:PUBG:1382332620955713537> PUBG",                       "PUBG",           None),
+                ("<:mlbb:1382552286965796944> mobile legend",              "mobile legend"   None),
+                ("valorant",         "valorant"        None),
+                ("minecraft",        "minecraft"       None),
+                ("<:Roblox:1382333545527382166> roblox",                   "roblox"          None),
 
 # ─────────────────────────────────────────────────────────────
 # 4. Slash command /rolemenu
