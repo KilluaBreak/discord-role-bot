@@ -120,6 +120,7 @@ class RoleMenuView(discord.ui.View):
                 ("valorant",         "valorant"        None),
                 ("minecraft",        "minecraft"       None),
                 ("<:Roblox:1382333545527382166> roblox",                   "roblox"          None),
+            ]))
 
 # ─────────────────────────────────────────────────────────────
 # 4. Slash command /rolemenu
