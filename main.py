@@ -114,6 +114,7 @@ class RoleMenuView(discord.ui.View):
             ]))
         self.add_item(GenericRoleDropdown(
             "Choose Your Games…"
+            [
                 ("<:Free_fire_logo:1382334048092819497> free fire",        "free fire",      None),
                 ("<:PUBG:1382332620955713537> PUBG",                       "PUBG",           None),
                 ("<:mlbb:1382552286965796944> mobile legend",              "mobile legend"   None),
