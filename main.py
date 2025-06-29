@@ -83,7 +83,7 @@ class RoleMenuView(discord.ui.View):
         super().__init__(timeout=None)
 
         self.add_item(GenericRoleDropdown(
-            "Choose Your Race…",
+            "Pilih Role Ras mu...",
             [
                 ("🔱 ras dewa",       "ras_dewa",       None),
                 ("😈 ras iblis",      "ras_iblis",      None),
@@ -94,7 +94,7 @@ class RoleMenuView(discord.ui.View):
             ]))
 
         self.add_item(GenericRoleDropdown(
-            "Choose Your Ping…",
+            "Pilih Role Ping mu...",
             [
                 ("🎉 giveaway ping",       "giveaway_ping",    None),
                 ("🤝 partnership ping",    "partnership_ping", None),
@@ -104,7 +104,7 @@ class RoleMenuView(discord.ui.View):
             ]))
 
         self.add_item(GenericRoleDropdown(
-            "Choose Your Hobbies…",
+            "Pilih Role Hobi mu...",
             [
                 ("🌸 pencinta anime",   "anime",    None),
                 ("🔥 pencinta donghua", "donghua",  None),
@@ -113,12 +113,12 @@ class RoleMenuView(discord.ui.View):
                 ("🎨 pencinta gambar",  "gambar",   None),
             ]))
         self.add_item(GenericRoleDropdown(
-            "Choose Your games…",
+            "Pilih Role Games mu...",
             [
                 ("💥 free fire",       "free fire",     None),
                 ("🚪 pubg",            "PUBG",          None),
-                ("🔪 mobile legend",   "mobile legend", None), 
-                ("💣 Valorant",        "Valorant",      None), 
+                ("⚔️ Mobile Legends",   "mobile legend", None), 
+                ("🔪 Valoran",        "Valorant",      None), 
                 ("🎧 minecraft",       "minecraft",     None),
                 ("📦roblox",          "roblox",        None),
             ]))
@@ -133,7 +133,7 @@ async def rolemenu_cmd(interaction: discord.Interaction):
 
     embed = discord.Embed(
         title="‌🇾‌‌🇺‌‌🇬‌‌🇪‌‌🇳‌‌🇽‌",
-        description="# Klik dropdown di bawah untuk memilih role.\n• pick your role.\n\nRas\n`🔱ras dewa`\n`😈ras iblis`\n`🐉ras naga`\n`💨 ras elemental`\n`⛏️ ras dwarf`\n`🧑‍🦲 ras human`\n\nPing\n`🎉giveaway ping`\n`🤝partnership ping`\n`🔔partnership event`\n`📣 promosi ping`\n`❓ misteri ping`\n\nHobbies\n`🌸pencinta anime`\n`🔥pencinta donghua`\n`📖pencinta komik`\n`🎧pencinta musik`\n`🎨pencinta gambar`\n\nGames\n`💥 Free Fire`\n`🔪 Mobile Legends`\n`💣 Valorant`\n`🚪 PUBG`\n`📦 Roblox`\n`🎧 minecraft`",
+        description="# Klik dropdown di bawah untuk memilih role.\n• pick your role.\n\nRas\n`🔱ras dewa`\n`😈ras iblis`\n`🐉ras naga`\n`💨 ras elemental`\n`⛏️ ras dwarf`\n`🧑‍🦲 ras human`\n\nPing\n`🎉giveaway ping`\n`🤝partnership ping`\n`🔔partnership event`\n`📣 promosi ping`\n`❓ misteri ping`\n\nHobbies\n`🌸pencinta anime`\n`🔥pencinta donghua`\n`📖pencinta komik`\n`🎧pencinta musik`\n`🎨pencinta gambar`\n\nGames\n`💥 Free Fire`\n`⚔️ Mobile Legends`\n`🔪 Valorant`\n`🚪 PUBG`\n`📦 Roblox`\n`🎧 minecraft`",
                         color=discord.Color.blurple()
     )
     await interaction.response.send_message(embed=embed, view=RoleMenuView())
