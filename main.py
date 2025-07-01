@@ -129,10 +129,10 @@ async def rolemenu_cmd(interaction: discord.Interaction):
     embed_color = discord.Color.from_str("#7542f5")
 
     embeds = [
-        discord.Embed(title="Role Ras", description="Pilih ras favoritmu:", color=embed_color).set_image(url="https://link-gambar-ras.png"),
-        discord.Embed(title="Role Ping", description="Dapatkan notifikasi sesuai pilihanmu:", color=embed_color).set_image(url="https://link-gambar-ping.png"),
-        discord.Embed(title="Role Hobi", description="Pilih hobi yang kamu suka:", color=embed_color).set_image(url="https://link-gambar-hobi.png"),
-        discord.Embed(title="Role Games", description="Tentukan game yang kamu mainkan:", color=embed_color).set_image(url="https://link-gambar-game.png")
+        discord.Embed(title="Role Ras", description="Pilih ras favoritmu:", color=embed_color).set_image(url="https://files.catbox.moe/7d3sj0.png"),
+        discord.Embed(title="Role Ping", description="Dapatkan notifikasi sesuai pilihanmu:", color=embed_color).set_image(url="https://files.catbox.moe/mueci9.png"),
+        discord.Embed(title="Role Hobi", description="Pilih hobi yang kamu suka:", color=embed_color).set_image(url="https://files.catbox.moe/r2vry2.png"),
+        discord.Embed(title="Role Games", description="Tentukan game yang kamu mainkan:", color=embed_color).set_image(url="https://files.catbox.moe/ww7puf.png")
     ]
 
     await interaction.response.send_message(embed=embeds[0], view=RoleMenuView())
