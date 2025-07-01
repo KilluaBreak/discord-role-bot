@@ -14,7 +14,6 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 @bot.event
 async def on_ready():
-    await bot.tree.sync()
     print(f"✅ Logged in as {bot.user}")
 
 ROLE_GROUPS = {
@@ -120,10 +119,10 @@ class GameMenuView(discord.ui.View):
                 ("📦 Roblox", "roblox", None),
             ]))
 
-@bot.tree.command(name="rolemenu", description="Kirim menu role dalam 4 embed")
-async def rolemenu_cmd(interaction: discord.Interaction):
-    if interaction.user.id not in OWNER_IDS:
-        await interaction.response.send_message("❌ Kamu bukan admin.", ephemeral=True)
+@bot.command(name="rolemenu")
+async def rolemenu_cmd(ctx: commands.Context):
+    if ctx.author.id not in OWNER_IDS:
+        await ctx.send("❌ Kamu bukan admin.")
         return
 
     embed_color = discord.Color.from_str("#7542f5")
@@ -135,9 +134,9 @@ async def rolemenu_cmd(interaction: discord.Interaction):
         discord.Embed(title="Role Games", description="Tentukan game yang kamu mainkan:", color=embed_color).set_image(url="https://files.catbox.moe/ww7puf.png")
     ]
 
-    await interaction.response.send_message(embed=embeds[0], view=RoleMenuView())
-    await interaction.channel.send(embed=embeds[1], view=PingMenuView())
-    await interaction.channel.send(embed=embeds[2], view=HobiMenuView())
-    await interaction.channel.send(embed=embeds[3], view=GameMenuView())
+    await ctx.send(embed=embeds[0], view=RoleMenuView())
+    await ctx.send(embed=embeds[1], view=PingMenuView())
+    await ctx.send(embed=embeds[2], view=HobiMenuView())
+    await ctx.send(embed=embeds[3], view=GameMenuView())
 
 bot.run(TOKEN)
