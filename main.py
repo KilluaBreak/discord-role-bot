@@ -27,12 +27,12 @@ ROLE_GROUPS = {
     "partnership_ping": [1383012056353210488],
     "partnership_event": [1383671901699702864],
     "promosi_ping": [1383366844450082817],
-    "misteri_ping": [1387340859946569808],
     "anime": [1381930147833315398],
     "donghua": [1381930494316515411],
     "komik": [1381931492518662214],
     "vocaloid": [1381931995373768744],
     "art": [1381932371787386920],
+    "pengamat": [1381932623353610240],
     "free fire": [1383003121416011866],
     "PUBG": [1383003667178852494],
     "mobile legend": [1383003591614140477],
@@ -69,7 +69,7 @@ class RoleMenuView(discord.ui.View):
     def __init__(self):
         super().__init__(timeout=None)
         self.add_item(GenericRoleDropdown(
-            "Pilih Role Ras mu...",
+            "Pilih Role Ras mu...\n\n<@&1382008246327312424>\n<@&1382008643326574622>\n<@&1382010013144322128>\n<@&1385923115929833522>\n<@&1385922167685775401>\n<@&1385921921677266995>",
             [
                 ("🔱 ras dewa", "ras_dewa", None),
                 ("😈 ras iblis", "ras_iblis", None),
@@ -83,33 +83,33 @@ class PingMenuView(discord.ui.View):
     def __init__(self):
         super().__init__(timeout=None)
         self.add_item(GenericRoleDropdown(
-            "Pilih Role Ping mu...",
+            "Pilih Role Ping mu...\n\n<@&1383027202970484766>\n<@&1383012056353210488>\n<@&1383671901699702864>\n<@&1383371960733663242>",
             [
                 ("🎉 giveaway ping", "giveaway_ping", None),
                 ("🤝 partnership ping", "partnership_ping", None),
                 ("🔔 partnership event", "partnership_event", None),
                 ("📣 promosi ping", "promosi_ping", None),
-                ("❓ misteri ping", "misteri_ping", None),
             ]))
 
 class HobiMenuView(discord.ui.View):
     def __init__(self):
         super().__init__(timeout=None)
         self.add_item(GenericRoleDropdown(
-            "Pilih Role Hobi mu...",
+            "Pilih Role Hobi mu...\n\n<@&1381930147833315398>\n<@&1381930494316515411>\n<@&1381931492518662214>\n<@&1381931775479251077>\n<@&1381932371787386920>\n<@&1381932623353610240>",
             [
                 ("🌸 pencinta anime", "anime", None),
                 ("🔥 pencinta donghua", "donghua", None),
                 ("📖 pencinta komik", "komik", None),
                 ("🎧 pencinta musik", "vocaloid", None),
                 ("🎨 pencinta gambar", "art", None),
+                ("👀 pengamat server", "pengamat", None),
             ]))
 
 class GameMenuView(discord.ui.View):
     def __init__(self):
         super().__init__(timeout=None)
         self.add_item(GenericRoleDropdown(
-            "Pilih Role Games mu...",
+            "Pilih Role Games mu...\n\n<@&1383003121416011866>\n<@&1383003667178852494>\n<@&1383003591614140477>\n<@&1387784579431272558>\n<@&1387784434278990046>\n<@&1383003734552084531>",
             [
                 ("💥 Free Fire", "free fire", None),
                 ("🚪 PUBG", "PUBG", None),
