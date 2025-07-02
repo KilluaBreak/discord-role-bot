@@ -71,12 +71,12 @@ class RoleMenuView(discord.ui.View):
         self.add_item(GenericRoleDropdown(
             "click for pick your ras...",
             [
-                ("🔱 ras dewa", "ras_dewa", None),
-                ("😈 ras iblis", "ras_iblis", None),
-                ("🐉 ras naga", "ras_naga", None),
-                ("💨 ras elemental", "ras_elemental", None),
-                ("⛏️ ras dwarf", "ras_dwarf", None),
-                ("🧑‍🦲 ras human", "ras_human", None),
+                ("🔱 Ras Dewa", "ras_dewa", None),
+                ("😈 Ras Iblis", "ras_iblis", None),
+                ("🐉 Ras Naga", "ras_naga", None),
+                ("💨 Ras Elemental", "ras_elemental", None),
+                ("⛏️ Ras Dwarf", "ras_dwarf", None),
+                ("🧑‍🦲 Ras Human", "ras_human", None),
             ]))
 
 class PingMenuView(discord.ui.View):
@@ -85,10 +85,10 @@ class PingMenuView(discord.ui.View):
         self.add_item(GenericRoleDropdown(
             "click for pick your ping...",
             [
-                ("🎉 giveaway ping", "giveaway_ping", None),
-                ("🤝 partnership ping", "partnership_ping", None),
-                ("🔔 partnership event", "partnership_event", None),
-                ("📣 promosi ping", "promosi_ping", None),
+                ("🎉 Giveaway Ping", "giveaway_ping", None),
+                ("🤝 Partnership Ping", "partnership_ping", None),
+                ("🔔 Partnership Event", "partnership_event", None),
+                ("📣 Promosi Ping", "promosi_ping", None),
             ]))
 
 class HobiMenuView(discord.ui.View):
@@ -97,12 +97,12 @@ class HobiMenuView(discord.ui.View):
         self.add_item(GenericRoleDropdown(
             "click for pick your hobbie...",
             [
-                ("🌸 pencinta anime", "anime", None),
-                ("🔥 pencinta donghua", "donghua", None),
-                ("📖 pencinta komik", "komik", None),
-                ("🎧 pencinta musik", "vocaloid", None),
-                ("🎨 pencinta gambar", "art", None),
-                ("👀 pengamat server", "pengamat", None),
+                ("🌸 Pencinta Anime", "anime", None),
+                ("🔥 Pencinta Donghua", "donghua", None),
+                ("📖 Pencinta Komik", "komik", None),
+                ("🎧 Pencinta Musik", "vocaloid", None),
+                ("🎨 Pencinta Gambar", "art", None),
+                ("👀 Pengamat Server", "pengamat", None),
             ]))
 
 class GameMenuView(discord.ui.View):
