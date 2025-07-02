@@ -69,7 +69,7 @@ class RoleMenuView(discord.ui.View):
     def __init__(self):
         super().__init__(timeout=None)
         self.add_item(GenericRoleDropdown(
-            "pilih ras\n\n`🔱 ras dewa`\n`😈 ras iblis`\n`🐉 ras naga`\n`💨 ras elemental`\n`⛏️ ras dwarf`\n`🧑‍🦲 ras human`",
+            "click for pick your ras...",
             [
                 ("🔱 ras dewa", "ras_dewa", None),
                 ("😈 ras iblis", "ras_iblis", None),
@@ -83,7 +83,7 @@ class PingMenuView(discord.ui.View):
     def __init__(self):
         super().__init__(timeout=None)
         self.add_item(GenericRoleDropdown(
-            "Pilih ping\n\n`🎉 giveaway ping`\n`🤝 partnership ping`\n`🔔 partnership event`\n`📣 promosi ping`",
+            "click for pick your ping...",
             [
                 ("🎉 giveaway ping", "giveaway_ping", None),
                 ("🤝 partnership ping", "partnership_ping", None),
@@ -95,7 +95,7 @@ class HobiMenuView(discord.ui.View):
     def __init__(self):
         super().__init__(timeout=None)
         self.add_item(GenericRoleDropdown(
-            "Pilih hobi\n\n`🌸 pencinta anime`\n`🔥 pencinta donghua`\n`📖 pencinta komik`\n`🎧 pencinta musik`\n`🎨 pencinta gambar`\n`👀 pengamat server`",
+            "click for pick your hobbie...",
             [
                 ("🌸 pencinta anime", "anime", None),
                 ("🔥 pencinta donghua", "donghua", None),
@@ -109,7 +109,7 @@ class GameMenuView(discord.ui.View):
     def __init__(self):
         super().__init__(timeout=None)
         self.add_item(GenericRoleDropdown(
-            "Pilih game\n\n`💥 Free Fire`\n`🚪 PUBG`\n\`⚔️ Mobile Legends`\n`🔪 Valorant`\n`🎧 Minecraft`\n`📦 Roblox`",
+            "click for pick your game...",
             [
                 ("💥 Free Fire", "free fire", None),
                 ("🚪 PUBG", "PUBG", None),
@@ -128,10 +128,10 @@ async def rolemenu_cmd(ctx: commands.Context):
     embed_color = discord.Color.from_str("#7542f5")
 
     embeds = [
-        discord.Embed(title="Role Ras", description="Pilih ras favoritmu:", color=embed_color).set_image(url="https://files.catbox.moe/7d3sj0.png"),
-        discord.Embed(title="Role Ping", description="Dapatkan notifikasi sesuai pilihanmu:", color=embed_color).set_image(url="https://files.catbox.moe/mueci9.png"),
-        discord.Embed(title="Role Hobi", description="Pilih hobi yang kamu suka:", color=embed_color).set_image(url="https://files.catbox.moe/r2vry2.png"),
-        discord.Embed(title="Role Games", description="Tentukan game yang kamu mainkan:", color=embed_color).set_image(url="https://files.catbox.moe/ww7puf.png")
+        discord.Embed(title="Role Ras", description="pilih role yang kamu inginkan untuk di tunjukan ke Yulovers lainnya\n\n<@&1382008246327312424>\n<@&1382008643326574622>\n<@&1382010013144322128>\n<@&1385923115929833522>\n<@&1385922167685775401>\n<@&1385921921677266995>", color=embed_color).set_image(url="https://files.catbox.moe/7d3sj0.png"),
+        discord.Embed(title="Role Ping", description="pilih role yang kamu inginkan untuk di tunjukan ke Yulovers lainnya\n\n<@&1383012056353210488>\n<@&1383671901699702864>\n<@&1383027202970484766>\n<@&1383371960733663242>", color=embed_color).set_image(url="https://files.catbox.moe/mueci9.png"),
+        discord.Embed(title="Role Hobi", description="pilih role yang kamu inginkan untuk di tunjukan ke Yulovers lainnya\n\n<@&1381930147833315398>\n<@&1381930494316515411>\n<@&1381931492518662214>\n<@&1381931995373768744>\n<@&1381932371787386920>\n<@&1381932623353610240>", color=embed_color).set_image(url="https://files.catbox.moe/r2vry2.png"),
+        discord.Embed(title="Role Games", description="pilih role yang kamu inginkan untuk di tunjukan ke Yulovers lainnya\n\n<@&1383003121416011866>\n<@&1383003667178852494>\n<@&1383003591614140477>\n<@&1387784579431272558>\n<@&1387784434278990046>\n<@&1383003734552084531>", color=embed_color).set_image(url="https://files.catbox.moe/ww7puf.png")
     ]
 
     await ctx.send(embed=embeds[0], view=RoleMenuView())
